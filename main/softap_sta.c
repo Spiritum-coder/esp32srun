@@ -271,7 +271,7 @@ static void htHrint_task(void *pvParameters)
 static void network_check_task(void *pvParameters)
 {
     while (1) {
-        vTaskDelay(36000 / portTICK_PERIOD_MS);  // 1小时（3600000ms）延时
+        vTaskDelay(3600000 / portTICK_PERIOD_MS);  // 1小时（3600000ms）延时
 
         // 检查网络连接
         check_network_connection();
